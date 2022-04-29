@@ -10,3 +10,6 @@ List users:
 
     curl http://localhost:8080/api/person/list
     curl http://localhost:8080/api/person/entities
+
+Use a browser on http://localhost:8080/h2-console to open database H2 Console.
+Enter jdbc:h2:mem:testdb in URL and connect.
