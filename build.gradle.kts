@@ -15,8 +15,6 @@ plugins {
 
   id("org.springframework.boot") version "2.6.7"
   id("io.spring.dependency-management") version "1.0.11.RELEASE"
-
-  id("org.flywaydb.flyway") version "8.5.9"
 }
 
 dependencies {
@@ -47,10 +45,6 @@ tasks.withType<KotlinCompile> {
     languageVersion = "1.6"
     jvmTarget = "17"
   }
-}
-
-tasks.getByName<Jar>("jar") {
-  enabled = false
 }
 
 tasks.withType<Test> {
